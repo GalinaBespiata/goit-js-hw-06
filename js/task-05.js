@@ -4,6 +4,6 @@ const outputEl = document.querySelector("#name-output");
 inputEl.addEventListener("input", onInput)
 
 function onInput(evt){
-    evt.currentTarget.value = "" ? outputEl.textContext = "Anonymous" : outputEl.textContent = evt.currentTarget.value;
+    outputEl.textContent = !!evt.currentTarget.value ? evt.currentTarget.value : "Anonymus";
     }
     

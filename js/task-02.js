@@ -23,7 +23,6 @@ item.classList.add("item");
   items.push(item);
 })
 const list = document.querySelector("#ingredients")
-items.forEach((item) => {
-  return list.append(item);
-});
+ list.append(...items);
+
 console.log(list)
