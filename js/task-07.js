@@ -6,9 +6,10 @@ const spanInputEl = document.querySelector("#text");
 
 inputRangeEl.addEventListener("input",changeFontSize);
 
-
+spanInputEl.style.fontSize = inputRangeEl.value + "px";
 
 function changeFontSize(evt){
+
     spanInputEl.style.fontSize = evt.currentTarget.value + "px";
 
     console.log(spanInputEl.style)
